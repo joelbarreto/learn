@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Positioning Demo</title>
+    <style>
+        code {
+           color: #666; 
+           font: 14px/24px "Lucida Console";
+        }
+        div {
+            background: #eaeaed;
+            height: 62px;
+            padding-top: 38px;
+            text-align: center;
+            width: 100px;
+        }
+        .offset {
+            background: none;
+            border: 2px dashed #9799a7;
+            height: 100px;
+            padding: 0;
+            position:static;
+        }
+        .offset > code {
+            background: #2db34a;
+            color: #fff;
+            display: block;
+            height: 74px;
+            width: 100px;
+            padding-top: 26px;
+            text-align: center;
+            position: relative;
+            left: 70px;
+            top: 0px;
+        }
+        div,
+        .offset > code {
+            border-radius: 6px;
+        }
+    </style>
+</head>
+<body>
+    <div>
+        <code> &lt;div 1&gt; </code>
+    </div>
+    <div class="offset">
+        <code> &lt;div2a class="offset"&gt; </code>
+        <code> &lt;div2b class="offset"&gt; </code>
+    </div>
+    <div>
+        <code> &lt;div 3&gt; </code>
+    </div>
+</body>
+</html>

@@ -1,0 +1,49 @@
+/* CSS for floats demo */
+
+code {
+    background: #2db34a;
+    border-radius: 6px;
+    color: #fff;
+    display: block;
+    padding: 24px 15px;
+    text-align: center;
+    font: 14px/24px "Lucida Console", "Courier New", Courier;
+    margin: 10px;
+}
+header,
+section,
+aside,
+footer {
+    margin: 1 1.5% 24px 1.5%;
+}
+footer {
+    margin-bottom: 0;
+}
+section {
+    display: inline-block;
+    margin: 0 1.5%;
+    width: 30%;
+}
+aside {
+    float: right;
+    margin: 0 1.5%;
+    width: 30%;
+}
+/*
+    ====================
+    Clearfix
+    ====================
+*/
+.group {
+    clear: both;
+    *zoom: 1;
+}
+.group:after {
+    clear: both;
+}
+
+.group::before,
+.group::after {
+    content: "";
+    display: table;
+}
