@@ -60,13 +60,6 @@ table {
 	-moz-box-sizing: border-box;
 }
 
-.container {
-	padding-left: 30px;
-	padding-right: 30px;
-}
-h1, h3, h4, h5, p {
-	margin-bottom: 22px;
-}
 /*
 	===========================
 	Buttons
@@ -77,10 +70,19 @@ h1, h3, h4, h5, p {
 	border-radius: 5px;
 	display: inline-block;
 	margin: 0;
+	color: #fff;
+	cursor: pointer;
+	font-weight: 400;
+	letter-spacing: .5px;
+	text-transform: uppercase;
 }
 .btn-alt {
-	border: 1px solid #dfe2e5;
+	border: 1px solid #fff;
 	padding: 10px 30px;
+}
+.btn-alt:hover {
+	background: #fff;
+	color: #648880;
 }
 
 /*
@@ -91,6 +93,16 @@ h1, h3, h4, h5, p {
 
 .hero {
 	padding: 22px 80px 66px 80px;
+	line-height: 44px;
+	text-align: center;
+	color: #fff;
+}
+.hero h2 {
+	font-size: 36px;
+}
+.hero p {
+	font-size: 24px;
+	font-weight: 100;
 }
 
 /*
@@ -99,16 +111,43 @@ h1, h3, h4, h5, p {
 	==============================
 */
 .logo {
-	float: left;
-	border-top: 4px;
+	float:left;
+	border-top: 4px solid #648880;
+	font-size: 48px;
+	font-weight: 100;
+	line-height: 44px;
 	padding: 40px 0 22px 0;
+	text-transform: uppercase;
 }
+.tagline {
+	margin: 66px 0 22px 0;
+	text-align: right;
+}
+.primary-nav {
+	font-size: 14px;
+	font-weight:400;
+	letter-spacing: .5px;
+	text-transform: uppercase;
+}
+.primary-header a,
+.primary-footer a {
+	color: #fff;
+}
+.primary-header a:hover,
+.primary-footer a:hover {
+	color: #648880}
 
 /*
 	==============================
 	Primary footer
 	==============================
 */
+.primary-footer {
+	color: #648880;
+	font-size: 14px;
+	padding-bottom: 44px;
+	padding-top: 44px;
+}
 .primary-footer small {
 	float: left;
 }
@@ -129,6 +168,26 @@ h1, h3, h4, h5, p {
 .group::after {
     content: "";
     display: table;
+}
+
+/*
+	==============================
+	Rows
+	==============================
+*/
+
+.row {
+	background: #fff;
+	padding: 66px 0 44px 0;
+}
+.row,
+.row-alt {
+	min-width: 960px;
+}
+.row-alt {
+	background-color: #cbe2c1;
+	background-image: linear-gradient(to right, #a1d3b0, #f6f1d3);
+	padding: 44px 0 22px 0;
 }
 
 /*
@@ -153,8 +212,162 @@ h1, h3, h4, h5, p {
 	padding-left: 15px;
 	padding-right: 15px;
 }
+.container {
+	padding-left: 30px;
+	padding-right: 30px;
+}
 .container,
 .grid {
 	margin: 0 auto;
 	width: 960px;
+}
+.teaser a:hover h3 {
+	color: #a9b2b9;
+}
+
+/*
+	==========================
+	Custom Sytles
+	==========================
+*/
+body {
+	color: #888;
+	font: 300 16px/22px "Lato", "Open Sans", "Helvetica Neue", Helvetica, Arian, sans-serif;
+	background-color: #293f50;
+}
+h1, h3, h4, h5, p {
+	margin-bottom: 22px;
+	color: #648880;
+}
+
+h2 {
+	font-size: 24px;
+	line-height: 44px;
+}
+
+h3 {
+	font-size: 21px;
+}
+
+h4 {
+	font-size: 18px;
+}
+
+h5{
+	color: #a9b2b9;
+	font-size: 14px;
+	font-weight: 400;
+	text-transform: uppercase;
+}
+
+strong {
+	font-weight: 400;
+}
+cite,
+em {
+	font-style: italic;
+}
+
+/*
+	============================
+	Links
+	============================
+*/
+a {
+	color: #648880;
+	text-decoration: none;
+}
+a:hover {
+	color: #a9b2b9;
+}
+p a {
+	border-bottom: 1px solid #dfe2e5;
+}
+
+/*
+	=============================
+	Navigation
+	=============================
+*/
+.nav {
+	text-align: right;
+}
+
+/*
+	==============================
+	Lato fonts from Google
+	==============================
+*/
+.lato-thin {
+	font-family: "Lato", sans-serif;
+	font-weight: 100;
+	font-style: normal;
+  }
+  
+  .lato-light {
+	font-family: "Lato", sans-serif;
+	font-weight: 300;
+	font-style: normal;
+  }
+  
+  .lato-regular {
+	font-family: "Lato", sans-serif;
+	font-weight: 400;
+	font-style: normal;
+  }
+  
+  .lato-bold {
+	font-family: "Lato", sans-serif;
+	font-weight: 700;
+	font-style: normal;
+  }
+  
+  .lato-black {
+	font-family: "Lato", sans-serif;
+	font-weight: 900;
+	font-style: normal;
+  }
+  
+  .lato-thin-italic {
+	font-family: "Lato", sans-serif;
+	font-weight: 100;
+	font-style: italic;
+  }
+  
+  .lato-light-italic {
+	font-family: "Lato", sans-serif;
+	font-weight: 300;
+	font-style: italic;
+  }
+  
+  .lato-regular-italic {
+	font-family: "Lato", sans-serif;
+	font-weight: 400;
+	font-style: italic;
+  }
+  
+  .lato-bold-italic {
+	font-family: "Lato", sans-serif;
+	font-weight: 700;
+	font-style: italic;
+  }
+  
+  .lato-black-italic {
+	font-family: "Lato", sans-serif;
+	font-weight: 900;
+	font-style: italic;
+  }
+
+/*
+  	==================================
+	Leads
+	==================================
+*/
+
+.lead {
+	text-align: center;
+}
+.lead p {
+	font-size: 21px;
+	line-height: 33px;
 }

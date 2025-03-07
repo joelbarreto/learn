@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Background Demo</title>
+    <style>
+        .notice-success {
+            background: #67b11c url ("https://s3-us-west-2.amazonaws.com/s.cdpn.io/29841/tick_2.png") 20px 50% no-repeat;
+            background: #67b11c url("https://s3-us-west-2.amazonaws.com/s.cdpn.io/29841/tick_1.svg") 20px 50% no-repeat;
+            border: 2px solid #467813;
+            border-radius: 5px;
+            color: #fff;
+            font-family: "Helvetica Neue";
+            padding: 15px 20px 15px 50px;
+        }
+        #bg-gradient {
+            background: #466368;
+            /* background: -webkit-linear-gradient(#466368,#293f50);
+            background: -moz-linear-gradient(#466368,#293f50); */
+            background-image: linear-gradient(to right,#f6f1d3, #648880 75%, #293f50);
+            border-radius: 6px;
+            height: 120px;
+        }
+        div {
+            margin: 2% 0;
+            color: #fff;
+        }
+        #bg-double {
+            background: #67b11c url("https://s3-us-west-2.amazonaws.com/s.cdpn.io/29841/tick_1.svg") 20px 50% no-repeat, linear-gradient(#72c41f, #5c9e19);           
+            border: 2px solid #467813;
+            border-radius: 5px;
+            color: #fff;
+            font-family: "Helvetica Neue";
+            padding: 15px 20px 15px 50px;
+        }
+        #image-size {
+            background-image: url(https://s3-us-west-2.amazonaws.com/s.cdpn.io/29841/shay_1.jpg);
+            background-repeat:no-repeat;
+            border: 2px dashed #000;
+            height: 300px;
+            width: 400px;
+            padding: 10px;
+            margin: 20px;
+            background-size: 50%;;
+            background-clip: content-box;
+        }
+    </style>
+</head>
+<body>
+    <div class="notice-success">
+        Woo hoo! Congratulation, you did it!
+    </div>
+    <div id="bg-gradient" >
+        <div>bg-gradient</div>
+    </div>
+    <div id="bg-double">
+        Woo hoo! Congratulation, you did it with gradient background
+    </div>
+    <div id="image-size"></div>
+</body>
+</html>

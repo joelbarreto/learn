@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>List Demo</title>
+    <style>
+        body {
+            margin-top: 13px;
+        }
+        .navigation ul {
+           font: bold 11px "Helvitica Neue", Helvetica, Arial, sans-serif;
+           margin: 0;
+           padding: 0;
+           text-transform: uppercase;
+        }
+        .navigation li {
+            display: inline-block;
+        }
+        .navigation a {
+            background: #395870;
+            background: linear-gradient(#49708f, #293f50);
+            border-right: 1px solid rgba(0,0,0, .3);
+            color: #fff;
+            padding: 12px 20px;
+            text-decoration:none;
+        }
+        .navigation li:first-child a {
+            border-radius: 6px 0 0 6px;
+        }
+        .navigation li:last-child a {
+            border-radius: 0 6px 6px 0;
+            border-right: 0;
+        }
+        .navigation a:hover {
+            background: #314b60;
+            box-shadow: inset 0 0 10px 1px rgba(0,0,0, .3);
+        }
+    </style>
+</head>
+
+<body>
+    <nav class="navigation">
+        <ul>
+            <li><a href="#">Profile</a></li><!-- remove space
+         --><li><a href="#">Setting</a></li><!-- remove space
+         --><li><a href="#">Notifications</a></li><!-- remove space
+         --><li><a href="#">Logout</a></li>
+        </ul>
+    </nav>
+</body>
+
+</html>
